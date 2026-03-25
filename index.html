@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Family Tennis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">The Family Tennis</a>
+            <ul class="nav-links">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#programs">Программы</a></li>
+                <li><a href="#schedule">Расписание</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Family Tennis</h1>
+            <p>Теннис для всей семьи — от малышей до взрослых</p>
+            <a href="#contact" class="btn">Записаться</a>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>О нас</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🎾</div>
+                    <h3>Профессиональные тренеры</h3>
+                    <p>Опытные сертифицированные тренеры с индивидуальным подходом к каждому ученику</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Для всей семьи</h3>
+                    <p>Программы для детей от 4 лет и взрослых любого уровня подготовки</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🏆</div>
+                    <h3>Результат</h3>
+                    <p>Наши ученики регулярно побеждают на городских и региональных турнирах</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="section programs">
+        <div class="container">
+            <h2>Программы</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-age">4-7 лет</div>
+                    <h3>Малыши</h3>
+                    <p>Знакомство с теннисом через игру. Развитие координации и моторики.</p>
+                    <ul>
+                        <li>2 раза в неделю</li>
+                        <li>45 минут</li>
+                        <li>Группы до 6 человек</li>
+                    </ul>
+                </div>
+                <div class="program-card featured">
+                    <div class="program-age">8-14 лет</div>
+                    <h3>Юниоры</h3>
+                    <p>Техника, тактика и подготовка к соревнованиям.</p>
+                    <ul>
+                        <li>3 раза в неделю</li>
+                        <li>60 минут</li>
+                        <li>Группы до 4 человек</li>
+                    </ul>
+                </div>
+                <div class="program-card">
+                    <div class="program-age">15+ лет</div>
+                    <h3>Взрослые</h3>
+                    <p>От начинающих до продвинутых. Индивидуальные и групповые занятия.</p>
+                    <ul>
+                        <li>Гибкое расписание</li>
+                        <li>60-90 минут</li>
+                        <li>Группы до 4 человек</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="section schedule">
+        <div class="container">
+            <h2>Расписание</h2>
+            <div class="schedule-table-wrapper">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Программа</th>
+                            <th>Пн</th>
+                            <th>Вт</th>
+                            <th>Ср</th>
+                            <th>Чт</th>
+                            <th>Пт</th>
+                            <th>Сб</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Малыши (4-7)</td>
+                            <td>10:00</td>
+                            <td>—</td>
+                            <td>10:00</td>
+                            <td>—</td>
+                            <td>10:00</td>
+                            <td>11:00</td>
+                        </tr>
+                        <tr>
+                            <td>Юниоры (8-14)</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>—</td>
+                            <td>15:00</td>
+                            <td>—</td>
+                            <td>10:00</td>
+                        </tr>
+                        <tr>
+                            <td>Взрослые</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>12:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact-grid">
+                <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Телефон">
+                    <select name="program" required>
+                        <option value="" disabled selected>Выберите программу</option>
+                        <option value="kids">Малыши (4-7 лет)</option>
+                        <option value="juniors">Юниоры (8-14 лет)</option>
+                        <option value="adults">Взрослые (15+)</option>
+                    </select>
+                    <textarea name="message" placeholder="Сообщение" rows="4"></textarea>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Адрес</strong>
+                        <p>ул. Теннисная, 1</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Телефон</strong>
+                        <p><a href="tel:+70001234567">+7 (000) 123-45-67</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email</strong>
+                        <p><a href="mailto:info@familytennis.ru">info@familytennis.ru</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Режим работы</strong>
+                        <p>Пн-Пт: 9:00 — 21:00<br>Сб: 10:00 — 18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 The Family Tennis. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
