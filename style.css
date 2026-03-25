@@ -138,6 +138,15 @@ body {
     z-index: 1;
 }
 
+.hero-tag {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 16px;
+}
+
 .hero h1 {
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-weight: 800;
@@ -145,11 +154,19 @@ body {
     margin-bottom: 16px;
 }
 
-.hero p {
+.hero-sub {
     font-size: clamp(1rem, 2.5vw, 1.3rem);
     opacity: 0.9;
     margin-bottom: 40px;
     font-weight: 400;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -171,6 +188,17 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
+.btn-outline {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-outline:hover {
+    border-color: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+}
+
 /* Sections */
 .section {
     padding: 100px 0;
@@ -181,8 +209,17 @@ body {
     font-size: 2.2rem;
     font-weight: 800;
     color: var(--green-dark);
-    margin-bottom: 60px;
+    margin-bottom: 24px;
     letter-spacing: -0.5px;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    color: var(--gray);
+    font-size: 1.05rem;
+    line-height: 1.8;
 }
 
 /* About */
@@ -229,6 +266,10 @@ body {
     background: var(--light);
 }
 
+.programs h2 {
+    margin-bottom: 60px;
+}
+
 .programs-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -239,7 +280,6 @@ body {
     background: var(--white);
     border-radius: 16px;
     padding: 40px 30px;
-    position: relative;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -290,61 +330,59 @@ body {
     border-bottom: none;
 }
 
-/* Schedule */
-.schedule {
+/* Why Us */
+.why-us {
     background: var(--white);
 }
 
-.schedule-table-wrapper {
-    overflow-x: auto;
+.why-us h2 {
+    margin-bottom: 60px;
 }
 
-.schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.95rem;
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
-.schedule-table th,
-.schedule-table td {
-    padding: 16px 20px;
-    text-align: center;
-}
-
-.schedule-table th {
-    background: var(--green-dark);
-    color: var(--white);
-    font-weight: 700;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.schedule-table th:first-child {
-    border-radius: 12px 0 0 0;
-    text-align: left;
-}
-
-.schedule-table th:last-child {
-    border-radius: 0 12px 0 0;
-}
-
-.schedule-table td {
-    border-bottom: 1px solid var(--light);
-}
-
-.schedule-table td:first-child {
-    text-align: left;
-    font-weight: 600;
-}
-
-.schedule-table tbody tr:hover {
+.feature {
+    padding: 32px;
+    border-radius: 16px;
     background: var(--light);
+    transition: transform 0.2s;
+}
+
+.feature:hover {
+    transform: translateY(-4px);
+}
+
+.feature-num {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--green);
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.feature h3 {
+    font-size: 1.15rem;
+    color: var(--green-dark);
+    margin-bottom: 8px;
+}
+
+.feature p {
+    color: var(--gray);
+    font-size: 0.95rem;
 }
 
 /* Contact */
 .contact {
     background: var(--light);
+}
+
+.contact h2 {
+    margin-bottom: 60px;
 }
 
 .contact-grid {
@@ -411,9 +449,25 @@ body {
 .footer {
     background: var(--green-dark);
     color: rgba(255, 255, 255, 0.7);
-    text-align: center;
     padding: 30px 0;
     font-size: 0.9rem;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-ig {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.footer-ig:hover {
+    color: var(--white);
 }
 
 /* Mobile */
@@ -444,6 +498,10 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -455,6 +513,11 @@ body {
 
     .section h2 {
         font-size: 1.8rem;
-        margin-bottom: 40px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
     }
 }
