@@ -3,8 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Family Tennis — Tampa Bay Tennis Academy</title>
-    <meta name="description" content="World-class tennis coaching for kids and parents in Tampa Bay. Train with The Family Tennis in Tarpon Springs, FL.">
+    <title>The Family Tennis — Tennis Academy in Tampa Bay | Tarpon Springs, FL</title>
+    <meta name="description" content="Professional tennis coaching for kids and adults in Tampa Bay. WTA-experienced coaches Madina Rakhim and Petr Pavlu offer junior tennis, tournament prep, and family lessons in Tarpon Springs, FL.">
+    <meta name="keywords" content="tennis lessons Tampa Bay, tennis academy Tarpon Springs, junior tennis Florida, WTA coach, tennis for kids, family tennis, Madina Rakhim, Petr Pavlu, tennis coaching, USTA tournaments">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thefamilytennis.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="The Family Tennis — Tennis Academy in Tampa Bay">
+    <meta property="og:description" content="World-class tennis coaching for kids and adults. WTA-experienced coaches in Tarpon Springs, FL.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thefamilytennis.com/">
+    <meta property="og:image" content="https://thefamilytennis.com/images/logo-dark.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Family Tennis — Tennis Academy in Tampa Bay">
+    <meta name="twitter:description" content="World-class tennis coaching for kids and adults. WTA-experienced coaches in Tarpon Springs, FL.">
+    <meta name="twitter:image" content="https://thefamilytennis.com/images/logo-dark.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SportsActivityLocation",
+        "name": "The Family Tennis",
+        "description": "Professional tennis academy in Tampa Bay offering coaching for kids and adults by WTA-experienced coaches.",
+        "url": "https://thefamilytennis.com",
+        "telephone": "+1-727-479-4570",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tarpon Springs",
+            "addressRegion": "FL",
+            "addressCountry": "US"
+        },
+        "sport": "Tennis",
+        "sameAs": [
+            "https://www.instagram.com/thefamilytennis/"
+        ],
+        "employee": [
+            {
+                "@type": "Person",
+                "name": "Madina Rakhim",
+                "jobTitle": "Head Coach"
+            },
+            {
+                "@type": "Person",
+                "name": "Petr Pavlu",
+                "jobTitle": "Coach"
+            }
+        ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -13,14 +65,18 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="#" class="logo">The Family Tennis</a>
+            <a href="#" class="logo" aria-label="The Family Tennis — Home">
+                <img src="images/logo-light.png" alt="The Family Tennis Logo" class="logo-img">
+            </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#coaches">Coaches</a></li>
                 <li><a href="#programs">Programs</a></li>
-                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#why-us">Why Tennis</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="nav-toggle" aria-label="Menu">
+            <a href="tel:+17274794570" class="nav-phone" aria-label="Call us">+1 (727) 479-4570</a>
+            <button class="nav-toggle" aria-label="Open navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -28,158 +84,207 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <p class="hero-tag">Tampa Bay Tennis Academy</p>
-            <h1>The Family Tennis</h1>
-            <p class="hero-sub">World-class coaching for kids and parents.<br>Get on court with us today.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn">Book a Lesson</a>
-                <a href="https://www.instagram.com/thefamilytennis/" target="_blank" rel="noopener" class="btn btn-outline">Follow Us</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="section about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p class="section-intro">Founded by <strong>Madina Rakhim</strong>, The Family Tennis is a Tampa Bay academy that welcomes children from age 4 and guides them all the way to the professional level. Our experienced coaches provide personalized training focused on both the technical and mental aspects of the game.</p>
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="about-icon">🎾</div>
-                    <h3>World-Class Coaches</h3>
-                    <p>Our certified coaches bring professional-level expertise and a passion for developing every player's potential</p>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">💆🏻</div>
-                    <h3>Mental Coaching</h3>
-                    <p>We go beyond technique — building mental toughness, focus, and confidence on and off the court</p>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">👨‍👩‍👧‍👦</div>
-                    <h3>Family First</h3>
-                    <p>We train kids and parents together. Tennis is more fun when the whole family plays!</p>
+    <main>
+        <section class="hero" aria-label="Welcome to The Family Tennis">
+            <div class="hero-content">
+                <img src="images/logo-dark.png" alt="The Family Tennis" class="hero-logo">
+                <p class="hero-sub">World-class coaching for kids and parents.<br>Get on court with us today.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Book a Lesson</a>
+                    <a href="tel:+17274794570" class="btn btn-outline">Call Now</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="programs" class="section programs">
-        <div class="container">
-            <h2>Programs</h2>
-            <div class="programs-grid">
-                <div class="program-card">
-                    <div class="program-age">Kids</div>
-                    <h3>Junior Tennis</h3>
-                    <p>We welcome children as young as 4 years old. Building coordination, technique, and love for the game from an early age.</p>
-                    <ul>
-                        <li>Ages 4 and up</li>
-                        <li>Basket drills & fun games</li>
-                        <li>Small groups for personal attention</li>
-                    </ul>
-                </div>
-                <div class="program-card featured">
-                    <div class="program-age">Competitive</div>
-                    <h3>Tournament Prep</h3>
-                    <p>From juniors to the professional level — personalized programs for technical and mental growth.</p>
-                    <ul>
-                        <li>Advanced stroke development</li>
-                        <li>Match play & strategy</li>
-                        <li>Mental toughness coaching</li>
-                    </ul>
-                </div>
-                <div class="program-card">
-                    <div class="program-age">Adults</div>
-                    <h3>Parent & Family</h3>
-                    <p>Tennis is for the whole family! Join your kids on the court and improve your own game too.</p>
-                    <ul>
-                        <li>All skill levels welcome</li>
-                        <li>Flexible scheduling</li>
-                        <li>Group & private lessons</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="why-us" class="section why-us">
-        <div class="container">
-            <h2>Why Tennis?</h2>
-            <p class="section-intro">Tennis is more than a sport — it shapes character, builds resilience, and opens doors for life.</p>
-            <div class="features-grid">
-                <div class="feature">
-                    <span class="feature-num">01</span>
-                    <h3>Individual Responsibility</h3>
-                    <p>Tennis teaches kids to take ownership of their successes and learn from their mistakes, fostering independence and self-reliance.</p>
-                </div>
-                <div class="feature">
-                    <span class="feature-num">02</span>
-                    <h3>Mental & Physical Fitness</h3>
-                    <p>The game demands quick thinking and strategic planning, while providing a full-body workout that improves coordination, agility, and overall fitness.</p>
-                </div>
-                <div class="feature">
-                    <span class="feature-num">03</span>
-                    <h3>Emotional Resilience</h3>
-                    <p>Handling victories and defeats builds emotional strength and character — qualities that extend far beyond the court.</p>
-                </div>
-                <div class="feature">
-                    <span class="feature-num">04</span>
-                    <h3>Lifelong Enjoyment</h3>
-                    <p>Tennis can be enjoyed at any age, offering social connections and a sense of community that lasts a lifetime.</p>
-                </div>
-                <div class="feature">
-                    <span class="feature-num">05</span>
-                    <h3>Global Opportunities</h3>
-                    <p>Aspiring professionals have the chance to travel the world, experience different cultures, and expand their horizons through international competitions.</p>
-                </div>
-                <div class="feature">
-                    <span class="feature-num">06</span>
-                    <h3>Self-Organization</h3>
-                    <p>Tennis players learn to plan their own training, travel, and match prep — developing time management skills essential both on and off the court.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2>Get on Court With Us</h2>
-            <div class="contact-grid">
-                <form class="contact-form" name="contact" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contact">
-                    <input type="text" name="name" placeholder="Your name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="tel" name="phone" placeholder="Phone">
-                    <select name="program" required>
-                        <option value="" disabled selected>Choose a program</option>
-                        <option value="kids">Junior Tennis (Kids)</option>
-                        <option value="competitive">Tournament Prep</option>
-                        <option value="adults">Parent & Family</option>
-                        <option value="private">Private Lesson</option>
-                    </select>
-                    <textarea name="message" placeholder="Tell us about your goals" rows="4"></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <strong>Location</strong>
-                        <p>Tarpon Springs, FL<br>Tampa Bay Area</p>
+        <section id="about" class="section about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p class="section-intro">Founded by <strong>Madina Rakhim</strong> and <strong>Petr Pavlu</strong>, The Family Tennis is a Tampa Bay academy that welcomes children from age 4 and guides them all the way to the professional level. Our experienced coaches provide personalized training focused on both the technical and mental aspects of the game.</p>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">🎾</div>
+                        <h3>World-Class Coaches</h3>
+                        <p>WTA-level experience coaching top-ranked players — now dedicated to developing every player's potential</p>
                     </div>
-                    <div class="contact-item">
-                        <strong>Instagram</strong>
-                        <p><a href="https://www.instagram.com/thefamilytennis/" target="_blank" rel="noopener">@thefamilytennis</a></p>
+                    <div class="about-card">
+                        <div class="about-icon">🧠</div>
+                        <h3>Mental Coaching</h3>
+                        <p>We go beyond technique — building mental toughness, focus, and confidence on and off the court</p>
                     </div>
-                    <div class="contact-item">
-                        <strong>About</strong>
-                        <p>World-class tennis coaching for kids and parents in Tampa Bay, Florida.</p>
+                    <div class="about-card">
+                        <div class="about-icon">👨‍👩‍👧‍👦</div>
+                        <h3>Family First</h3>
+                        <p>We train kids and parents together. Tennis is more fun when the whole family plays!</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="coaches" class="section coaches">
+            <div class="container">
+                <h2>Meet the Coaches</h2>
+                <p class="section-intro">Husband and wife coaching team with professional WTA Tour experience, bringing world-class expertise to every lesson.</p>
+
+                <div class="coaches-grid">
+                    <article class="coach-card">
+                        <div class="coach-photo">
+                            <img src="images/madina.jpg" alt="Madina Rakhim — Head Coach at The Family Tennis" loading="lazy">
+                        </div>
+                        <div class="coach-info">
+                            <span class="coach-role">Head Coach</span>
+                            <h3>Madina Rakhim</h3>
+                            <p>Madina not only played against the world's best players, but has also worked with promising players who turned pro.</p>
+                            <ul class="coach-highlights">
+                                <li>Represented Kazakhstan as <strong>#1 player</strong> at Billie Jean King Cup (Fed Cup)</li>
+                                <li>National Team Captain for players such as <strong>Yaroslava Shvedova</strong>, <strong>Zarina Diyas</strong>, <strong>Sesil Karatancheva</strong>, <strong>Galina Voskoboeva</strong>, and <strong>Amina Rakhim</strong></li>
+                                <li>Full tennis scholarship at <strong>Wichita State University</strong> — played as #1 in singles and doubles, representing her college at <strong>NCAA Division I</strong> Championship</li>
+                                <li>Head coach of <strong>"Team Kazakhstan"</strong> program for the country's best young players</li>
+                                <li>Captain of Kazakhstan National Girls Teams (U12 & U14) at the <strong>World Junior Cup</strong></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="coach-card">
+                        <div class="coach-photo">
+                            <img src="images/petr.jpg" alt="Petr Pavlu — Coach at The Family Tennis" loading="lazy">
+                        </div>
+                        <div class="coach-info">
+                            <span class="coach-role">Coach</span>
+                            <h3>Petr Pavlu</h3>
+                            <p>Petr is an experienced WTA coach with a passion for tennis and a proven track record of developing elite players.</p>
+                            <ul class="coach-highlights">
+                                <li>Coached <strong>Zarina Diyas</strong> to victories over Top 10 WTA players including <strong>Jelena Jankovic</strong>, <strong>Elina Svitolina</strong>, and <strong>Petra Kvitova</strong></li>
+                                <li>Coached WTA Tour player <strong>Marie Bouzkova</strong> (career-high <strong>WTA #41</strong>)</li>
+                                <li>Developed players from scratch to <strong>USTA tournament champions</strong> within 1.5 years in the United States</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="programs" class="section programs">
+            <div class="container">
+                <h2>Programs</h2>
+                <div class="programs-grid">
+                    <div class="program-card">
+                        <div class="program-age">Kids</div>
+                        <h3>Junior Tennis</h3>
+                        <p>We welcome children as young as 4 years old. Building coordination, technique, and love for the game from an early age.</p>
+                        <ul>
+                            <li>Ages 4 and up</li>
+                            <li>Basket drills & fun games</li>
+                            <li>Small groups for personal attention</li>
+                        </ul>
+                    </div>
+                    <div class="program-card featured">
+                        <div class="program-age">Competitive</div>
+                        <h3>Tournament Prep</h3>
+                        <p>From juniors to the professional level — personalized programs for technical and mental growth.</p>
+                        <ul>
+                            <li>Advanced stroke development</li>
+                            <li>Match play & strategy</li>
+                            <li>Mental toughness coaching</li>
+                        </ul>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-age">Adults</div>
+                        <h3>Parent & Family</h3>
+                        <p>Tennis is for the whole family! Join your kids on the court and improve your own game too.</p>
+                        <ul>
+                            <li>All skill levels welcome</li>
+                            <li>Flexible scheduling</li>
+                            <li>Group & private lessons</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="section why-us">
+            <div class="container">
+                <h2>Why Tennis?</h2>
+                <p class="section-intro">Tennis is more than a sport — it shapes character, builds resilience, and opens doors for life.</p>
+                <div class="features-grid">
+                    <div class="feature">
+                        <span class="feature-num">01</span>
+                        <h3>Individual Responsibility</h3>
+                        <p>Tennis teaches kids to take ownership of their successes and learn from their mistakes, fostering independence and self-reliance.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-num">02</span>
+                        <h3>Mental & Physical Fitness</h3>
+                        <p>The game demands quick thinking and strategic planning, while providing a full-body workout that improves coordination, agility, and overall fitness.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-num">03</span>
+                        <h3>Emotional Resilience</h3>
+                        <p>Handling victories and defeats builds emotional strength and character — qualities that extend far beyond the court.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-num">04</span>
+                        <h3>Lifelong Enjoyment</h3>
+                        <p>Tennis can be enjoyed at any age, offering social connections and a sense of community that lasts a lifetime.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-num">05</span>
+                        <h3>Global Opportunities</h3>
+                        <p>Aspiring professionals have the chance to travel the world, experience different cultures, and expand their horizons through international competitions.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-num">06</span>
+                        <h3>Self-Organization</h3>
+                        <p>Tennis players learn to plan their own training, travel, and match prep — developing time management skills essential both on and off the court.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2>Get on Court With Us</h2>
+                <div class="contact-grid">
+                    <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="phone" placeholder="Phone">
+                        <select name="program" required>
+                            <option value="" disabled selected>Choose a program</option>
+                            <option value="kids">Junior Tennis (Kids)</option>
+                            <option value="competitive">Tournament Prep</option>
+                            <option value="adults">Parent & Family</option>
+                            <option value="private">Private Lesson</option>
+                        </select>
+                        <textarea name="message" placeholder="Tell us about your goals" rows="4"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>Phone</strong>
+                            <p><a href="tel:+17274794570">+1 (727) 479-4570</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Location</strong>
+                            <p>Tarpon Springs, FL<br>Tampa Bay Area</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Instagram</strong>
+                            <p><a href="https://www.instagram.com/thefamilytennis/" target="_blank" rel="noopener">@thefamilytennis</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>About</strong>
+                            <p>Professional tennis coaching for kids and adults in Tampa Bay, Florida. WTA-experienced coaches.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container footer-inner">
+            <img src="images/logo-light.png" alt="The Family Tennis" class="footer-logo">
             <p>&copy; 2026 The Family Tennis. All rights reserved.</p>
             <a href="https://www.instagram.com/thefamilytennis/" target="_blank" rel="noopener" class="footer-ig">@thefamilytennis</a>
         </div>
