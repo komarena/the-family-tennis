@@ -34,10 +34,8 @@
         "telephone": "+1-727-479-4570",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "3561 Keystone Rd",
-            "addressLocality": "Tarpon Springs",
+            "addressLocality": "Tampa Bay",
             "addressRegion": "FL",
-            "postalCode": "34688",
             "addressCountry": "US"
         },
         "sport": "Tennis",
@@ -59,6 +57,15 @@
     }
     </script>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SXMNCR709S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXMNCR709S');
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -68,7 +75,7 @@
     <header class="header">
         <nav class="nav">
             <a href="#" class="logo" aria-label="The Family Tennis — Home">
-                <span class="logo-text">Family Tennis</span>
+                <img src="images/logo-light-transparent.png" alt="The Family Tennis" class="logo-img">
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -94,7 +101,7 @@
             <div class="hero-content">
                 <p class="hero-tag">Tampa Bay Tennis Academy</p>
                 <h1 class="hero-title">The Family<br>Tennis</h1>
-                <p class="hero-sub">World-class coaching for kids and parents.<br>Get on court with us today.</p>
+                <p class="hero-sub">A place where champions thrive from as early as four years old.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn">Book a Lesson</a>
                     <a href="tel:+17274794570" class="btn btn-outline">Call Now</a>
@@ -105,27 +112,49 @@
         <section id="about" class="section about">
             <div class="container">
                 <h2>About Us</h2>
-                <p class="section-intro">Founded by <strong>Madina Rakhim</strong> and <strong>Petr Pavlu</strong>, The Family Tennis is a Tampa Bay academy that welcomes children from age 4 and guides them all the way to the professional level. Our experienced coaches provide personalized training focused on both the technical and mental aspects of the game.</p>
+                <p class="section-intro">Founded by <strong>Madina Rakhim</strong> and <strong>Petr Pavlu</strong>, The Family Tennis is a Tampa Bay academy built on one mission — to nurture future professionals from the very first swing. Our passion is growing young athletes from childhood, giving them the foundation, discipline, and love for the game they need to compete at the highest level. With personalized coaching focused on both technique and mental strength, we guide every player from age 4 all the way to the pro stage.</p>
                 <div class="about-grid">
                     <div class="about-card">
-                        <div class="about-icon">🎾</div>
+                        <div class="about-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M18.09 5.91c-3.17 3.17-3.17 8.31 0 11.48"/><path d="M5.91 5.91c3.17 3.17 3.17 8.31 0 11.48"/><path d="M2 12h20"/></svg>
+                        </div>
                         <h3>World-Class Coaches</h3>
                         <p>WTA-level experience coaching top-ranked players — now dedicated to developing every player's potential</p>
                     </div>
                     <div class="about-card">
-                        <div class="about-icon">🏟️</div>
-                        <h3>Brand New Courts</h3>
-                        <p>Train on two brand new hard courts — professional-grade surfaces for optimal play and performance</p>
+                        <div class="about-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h3>Tampa Bay Based</h3>
+                        <p>Coaching across the Tampa Bay area — bringing world-class training to local courts near you</p>
                     </div>
                     <div class="about-card">
-                        <div class="about-icon">🧠</div>
+                        <div class="about-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 3.4 2.1 6.3 5 7.5V20h6v-2.5c2.9-1.2 5-4.1 5-7.5a8 8 0 0 0-8-8z"/><path d="M9 22h6"/><path d="M10 2v4"/><path d="M14 2v4"/><path d="M8 10h8"/></svg>
+                        </div>
                         <h3>Mental Coaching</h3>
                         <p>We go beyond technique — building mental toughness, focus, and confidence on and off the court</p>
                     </div>
                     <div class="about-card">
-                        <div class="about-icon">👨‍👩‍👧‍👦</div>
-                        <h3>Family First</h3>
-                        <p>We train kids and parents together. Tennis is more fun when the whole family plays!</p>
+                        <div class="about-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3>Family<br>First</h3>
+                        <p>Programs for all ages — kids, juniors, and adults. The whole family can enjoy the game!</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <h3>Multilingual Coaching</h3>
+                        <p>We speak English, Russian, Kazakh, and Czech — so every player and parent feels at home</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                        </div>
+                        <h3>Just for Fun</h3>
+                        <p>Always dreamed of playing tennis? Already know your way around the court? Either way — come join us for recreational sessions, social play, and pure enjoyment of the game</p>
                     </div>
                 </div>
             </div>
@@ -151,6 +180,7 @@
                                 <li>Earned a full athletic scholarship to <strong>Wichita State University</strong>, where she competed as the top seed in both singles and doubles at the <strong>NCAA Division I</strong> level</li>
                                 <li>Led the national <strong>"Team Kazakhstan"</strong> development program, training the country's most talented junior players</li>
                                 <li>Captained Kazakhstan's <strong>U12 and U14 Girls Teams</strong> at the <strong>World Junior Cup</strong></li>
+                                <li>Won the <strong>Asian Championship U12</strong> as team captain</li>
                             </ul>
                         </div>
                     </article>
@@ -167,6 +197,9 @@
                                 <li>Worked with <strong>Zarina Diyas</strong> on the WTA Tour, helping her secure wins against Top 10 opponents such as <strong>Jelena Jankovic</strong>, <strong>Elina Svitolina</strong>, and <strong>Petra Kvitova</strong></li>
                                 <li>Part of the coaching team behind <strong>Marie Bouzkova</strong>'s rise to <strong>world #41</strong> on the WTA rankings</li>
                                 <li>Since relocating to the U.S., has built players from the ground up — producing <strong>USTA tournament winners</strong> in under 18 months</li>
+                                <li>Served as <strong>Davis Cup Junior Captain</strong> and <strong>Federico Cup Coach</strong> for Kazakhstan</li>
+                                <li>Guided a player from unranked to <strong>ITF #53</strong> in just 2.5 years</li>
+                                <li>Extensive experience across <strong>Junior and Adult Grand Slams</strong>, <strong>Fed Cup</strong>, <strong>Davis Cup</strong>, and <strong>WTA, ITF, ETA, ATF</strong> tournaments</li>
                             </ul>
                         </div>
                     </article>
@@ -200,12 +233,22 @@
                     </div>
                     <div class="program-card">
                         <div class="program-age">Adults</div>
-                        <h3>Parent & Family</h3>
-                        <p>Tennis is for the whole family! Join your kids on the court and improve your own game too.</p>
+                        <h3>Adult Lessons</h3>
+                        <p>Whether you're picking up a racket for the first time or getting back into the game — we have groups and private sessions for all levels.</p>
                         <ul>
                             <li>All skill levels welcome</li>
                             <li>Flexible scheduling</li>
                             <li>Group & private lessons</li>
+                        </ul>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-age">Pro</div>
+                        <h3>Pro Player Support</h3>
+                        <p>Already competing at a high level? Our WTA-experienced coaches offer specialized sessions to fine-tune technique, strategy, and mental game.</p>
+                        <ul>
+                            <li>Stroke & technique refinement</li>
+                            <li>Tactical match analysis</li>
+                            <li>Short-term intensives or ongoing support</li>
                         </ul>
                     </div>
                 </div>
@@ -277,18 +320,11 @@
                         </div>
                         <div class="contact-item">
                             <strong>Location</strong>
-                            <p><a href="https://maps.app.goo.gl/igz9WHNUw3PnrGah8" target="_blank" rel="noopener">3561 Keystone Rd<br>Tarpon Springs, FL 34688</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Courts</strong>
-                            <p>2 brand new hard courts</p>
+                            <p>Tampa Bay Area, FL</p>
                         </div>
                         <div class="contact-item">
                             <strong>Instagram</strong>
                             <p><a href="https://www.instagram.com/thefamilytennis/" target="_blank" rel="noopener">@thefamilytennis</a></p>
-                        </div>
-                        <div class="contact-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.5!2d-82.7556!3d28.1508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c293bcd6c9001d%3A0x60607be799114e83!2sFamily%20Tennis!5e0!3m2!1sen!2sus!4v1" width="100%" height="250" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Family Tennis location on map"></iframe>
                         </div>
                     </div>
                 </div>
@@ -298,7 +334,7 @@
 
     <footer class="footer">
         <div class="container footer-inner">
-            <img src="images/logo-light.png" alt="The Family Tennis" class="footer-logo" loading="lazy">
+            <img src="images/logo-dark-transparent.png" alt="The Family Tennis" class="footer-logo" loading="lazy">
             <p>&copy; 2026 The Family Tennis. All rights reserved.</p>
             <a href="https://www.instagram.com/thefamilytennis/" target="_blank" rel="noopener" class="footer-ig">@thefamilytennis</a>
         </div>

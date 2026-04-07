@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "family-tennis",
+      "runtimeExecutable": "/Users/alena/.nvm/versions/node/v24.14.0/bin/node",
+      "runtimeArgs": ["/Users/alena/.nvm/versions/node/v24.14.0/lib/node_modules/npm/bin/npx-cli.js", "serve", "-l", "8888", "/Users/alena/Desktop/Claude/the-family-tennis"],
+      "port": 8888
+    }
+  ]
+}
