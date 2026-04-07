@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "content/home.json"
+        fields:
+          - { label: "Hero Title", name: "hero_title", widget: "string", default: "The Family Tennis" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "string", default: "A place where champions thrive from as early as four years old." }
+          - { label: "About Text", name: "about_text", widget: "text" }
+
+  - name: "coaches"
+    label: "Coaches"
+    folder: "content/coaches"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image" }
+      - { label: "Bio", name: "bio", widget: "text" }
+      - { label: "Highlights", name: "highlights", widget: "list", field: { label: "Highlight", name: "highlight", widget: "string" } }
+      - { label: "Order", name: "order", widget: "number", default: 1 }
