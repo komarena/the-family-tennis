@@ -603,6 +603,10 @@ body {
     color: var(--silver);
 }
 
+.contact-map {
+    margin-top: 50px;
+}
+
 /* Footer */
 .footer {
     background: var(--black);
